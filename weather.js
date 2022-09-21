@@ -21,9 +21,6 @@ function WeatherAPI() {
     
     var dataElement2 = document.getElementById("city");
     dataElement2.innerHTML = "Ciudad: " + data.name; 
-    
-    
-    
   }
   
   var latElement = document.getElementById("Latitud");
@@ -34,9 +31,8 @@ function WeatherAPI() {
   console.log(long);
 
  request.open('GET', "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid=8e59d540bf55d8460dc988843b8c7cbb&units=metric", true);
-
-
-    request.send();
+    
+ request.send();
      
 }
 
